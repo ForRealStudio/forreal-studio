@@ -1,0 +1,75 @@
+<!DOCTYPE html> <html lang="pl"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — ForReal Studio</title>
+
+<link rel="stylesheet" href="style.css">
+</head> <body data-page="dashboard">
+<main class="dashboard-page">
+
+    <header class="dashboard-header">
+
+        <a href="index.html" class="auth-logo">
+            ForReal<span>_</span>
+        </a>
+
+        <button
+            id="logoutButton"
+            class="button secondary"
+        >
+            Wyloguj
+        </button>
+
+    </header>
+
+    <section class="dashboard-content">
+
+        <span class="dashboard-label">
+            FORREAL DASHBOARD
+        </span>
+
+        <h1>
+            Witaj w ForReal Studio.
+        </h1>
+
+        <p>
+            Zalogowano jako:
+        </p>
+
+        <strong id="userEmail">
+            Ładowanie...
+        </strong>
+
+        <div class="dashboard-grid">
+
+            <article>
+                <span>01</span>
+                <h2>Projekty</h2>
+                <p>
+                    Projekty rozwijane przez ForReal Studio.
+                </p>
+            </article>
+
+            <article>
+                <span>02</span>
+                <h2>Bug Reports</h2>
+                <p>
+                    Miejsce na przyszłe zgłoszenia błędów.
+                </p>
+            </article>
+
+            <article>
+                <span>03</span>
+                <h2>Profile</h2>
+                <p>
+                    Panel profilu użytkownika.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="auth.js"></script>
+</body> </html>
