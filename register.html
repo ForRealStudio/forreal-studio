@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rejestracja — ForReal Studio</title>
+
+    <meta
+        name="description"
+        content="Utwórz konto w ForReal Studio."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <section class="auth-card">
+
+            <a href="index.html" class="auth-logo">
+                ForReal<span>_</span>
+            </a>
+
+            <div class="auth-heading">
+
+                <span>FORREAL ACCOUNT</span>
+
+                <h1>
+                    Utwórz konto
+                </h1>
+
+                <p>
+                    Dołącz do ForReal Studio.
+                </p>
+
+            </div>
+
+            <form id="registerForm">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="twoj@email.com"
+                    required
+                >
+
+                <label for="password">
+                    Hasło
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 6 znaków"
+                    minlength="6"
+                    required
+                >
+
+                <label for="confirmPassword">
+                    Powtórz hasło
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Powtórz hasło"
+                    minlength="6"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="button primary auth-button"
+                >
+                    Utwórz konto
+                </button>
+
+                <p
+                    id="registerMessage"
+                    class="auth-message"
+                ></p>
+
+            </form>
+
+            <div class="auth-footer">
+
+                <span>
+                    Masz już konto?
+                </span>
+
+                <a href="login.html">
+                    Zaloguj się
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>
